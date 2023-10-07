@@ -57,14 +57,14 @@ body, ul {
 /* Para aplicar estilos no ID > utilize a hastag [#] antes do objeto  */
 .section-banner-home {
     width: 100%;
-    height: 500PX;
+    height: 700px;
     margin-top: 10px;
     padding: 50px;
     background-color: white;
 }
 .section-banner-home img {
-    max-height: 60%;
-    width: 60%;
+    height: auto;
+    width: 70%;
     display: block;
     margin: auto;
 }
@@ -74,15 +74,16 @@ body, ul {
 }
 .section-banner-home .texto-banner h1 {
     font-size: 30px;
-    width: 60%;
-    font-weight: 500;
-    padding-bottom: 20px;
+    width: 90%; /* width = Largura */
+    font-weight: 500; /* Espessura do Texto */
+    padding-bottom: 20px; /* Margem interna > Emabixo */
     color: black;
 }
 .section-banner-home .texto-banner p {
-    font-size: 15px;
+    font-size: 15px; 
     margin-bottom: 20px;
     color: black;
+    text-align: justify;
 }
 .section-banner-home .texto-banner a {
     color: rgb(0, 0, 0);
@@ -99,3 +100,106 @@ body, ul {
     font-weight: bold;
 }
 /* Fim estilo Banner Home */
+/* Início estilo destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque #saiba-mais {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    margin: 30px 0px;
+    width: 25%;
+}
+.destaque .col-6 img:hover {
+    box-shadow: 3px 3px 6px #b1b1b1;
+    transition: 0.3s;
+}
+
+/* Fim estilo Destaque */
+
+/* Início estilo novidade */
+
+.novidades .text-body {
+    width: 80%;
+    margin: 70px;
+}
+.novidades h2 {
+    color: black;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: black;
+}
+.novidades a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    margin: 30px 0px;
+    width: 25%;
+}
+/* Fim estilo novidade */
+/* Início estilo galeria */
+.galeria {
+    margin: 60px auto 20px;
+    /* Quando tivermos 4 valores no margin = top / right / botton / left > Exemplo: margin: 60px 60px 60px 60px; */
+    /* Quando tivermos 3 valores = top / right and left / botton > Exemplo: 60px auto 60px; */
+    /* Quando tivermos 2 valores será = top and botton / right left > Exemplo: Margin: 60px 30px; */
+    /* Quando tivermos 1 valor = top, botton, right and left serão idênticos > Exemplo: margin: 60px; */
+    /*  Essa regra se aplica também ao padding. */
+}
+.galeria .container {
+    margin-left: 11%;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery img {
+    width: 80%;
+    height: 80%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    display: block;
+}
+.galeria .gallery img:hover {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    box-shadow: 0 0 10px rgb(196, 195, 195);
+}
+    
+/* Fim estilo galeria */
