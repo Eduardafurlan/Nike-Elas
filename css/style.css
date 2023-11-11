@@ -504,7 +504,7 @@ body, ul {
     height: auto;
     width: 100%;
 }
-.bg-image {
+.card .bg-image {
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
